@@ -1,0 +1,14 @@
+# Eureka server properties
+eureka:
+  client: #No a client
+    registerWithEureka: false
+    fetchRegistry: false
+
+server:
+  port: 8888
+  
+spring:
+  profiles:
+    active: ${activeProfiles}
+  thymeleaf:
+    enabled: false  #Eureka server not user thymeleaf for UI

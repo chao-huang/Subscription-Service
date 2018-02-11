@@ -1,0 +1,7 @@
+# Properties of Eureka Server
+spring:
+  profiles:
+    active: docker
+
+server:
+  port: 8080

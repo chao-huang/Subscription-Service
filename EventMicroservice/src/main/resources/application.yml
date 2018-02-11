@@ -1,0 +1,15 @@
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:8888/eureka/
+
+server:
+  port: 8886
+  
+spring:
+  application:
+    name: event-service #Name for register the service
+  profiles:
+    active: ${activeProfiles}
+  freemarker:
+    enabled: false  #Ignore Eureka dashboard

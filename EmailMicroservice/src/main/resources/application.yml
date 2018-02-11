@@ -1,0 +1,16 @@
+# ds
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:8888/eureka/
+
+server:
+  port: 8887
+  
+spring:
+  application:
+    name: mail-service #Name for register the service
+  profiles:
+    active: ${activeProfiles}
+  freemarker:
+    enabled: false  #Ignore Eureka dashboard

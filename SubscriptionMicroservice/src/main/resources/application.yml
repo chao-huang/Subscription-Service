@@ -1,0 +1,30 @@
+eureka:
+  client:
+    registerWithEureka: false
+    service-url: 
+      defaultZone: http://localhost:8888/eureka/
+
+server:
+  port: 8885
+  
+spring:
+  application:
+    name: subscription-service #Name for register the service
+  profiles:
+    active: ${activeProfiles}
+  freemarker:
+    enabled: false  #Ignore Eureka dashboard
+    
+swagger:
+  contact:
+    email: developer@email.com
+    name: Sergio Igea
+    web: http://developerWeb.com
+  licence:
+    type: Apache Licence Version 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+  title: Subscription Service REST API
+  description: Subscription Service REST API for manage newsletter subscriptions
+  version: 1.0
+  terms-of-use: Terms of use
+    
